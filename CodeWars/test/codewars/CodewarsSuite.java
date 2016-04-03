@@ -17,7 +17,7 @@ import org.junit.runners.Suite;
  * @author oboff
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({DescendingOrderTest.class, CreatePhoneNumberTest.class, DubstepTest.class, SquareTest.class, MoneyTest.class, SmallestIntegerFinderTest.class, WhichAreInTest.class, CodeWarsTest.class})
+@Suite.SuiteClasses({CreatePhoneNumberTest.class, CountTheDigitTest.class, SquareTest.class, TenMinWalkTest.class, FindOddTest.class, FormatDecimalPlacesTest.class, CodeWarsTest.class, JadenCaseTest.class, DescendingOrderTest.class, DubstepTest.class, RemovedNumbersTest.class, CalculateRotationTest.class, MoneyTest.class, SmallestIntegerFinderTest.class, WhichAreInTest.class, VowelCountTest.class, PaginationHelperTest.class, NumberToReverseArrayTest.class, ReverseStringTest.class})
 public class CodewarsSuite {
 
     @BeforeClass

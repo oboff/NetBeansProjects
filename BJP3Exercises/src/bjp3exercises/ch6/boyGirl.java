@@ -3,27 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package codewars;
+package bjp3exercises.ch6;
 
-import static java.lang.System.out;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 /**
  *
  * @author oboff
  */
-public class CodeWars {
+public class boyGirl {
 
-    public static void main(String[] args) {
-        String s = "Steve 3 Sylvia 7 Craig 14 Lisa 13 Brian 4 Charlotte 9 Jordan 10"; // 3 14 4 6
-                                                                                     // 7 13 9 
-        Scanner sc = new Scanner(s);
-
+    public static void boyGirl(Scanner sc) {
         int boy = 0, girl = 0;
         int boycount = 0, girlcount = 0;
+
         while (sc.hasNext()) {
             if (sc.hasNext("[a-zA-Z]+")) {
                 ++boycount;
@@ -41,8 +34,12 @@ public class CodeWars {
             }
 
         }
+
         sc.close();
-        System.out.printf("%d boys, %d girls\n", boycount, girlcount);
-        System.out.printf("Difference between the boys' and girls' sums: %d\n", boy - girl);
+
+        System.out.printf(
+                "%d boys, %d girls\n", boycount, girlcount);
+        System.out.printf(
+                "Difference between boys' and girls' sums: %d\n", Math.abs(boy - girl));
     }
 }
